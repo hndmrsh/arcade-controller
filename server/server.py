@@ -36,7 +36,10 @@ import win32api
 import win32con
 import ctypes
 
-# BLOCK: this block from http://stackoverflow.com/questions/14489013/simulate-python-keypresses-for-controlling-a-game
+#
+# BLOCK: 
+# this block from http://stackoverflow.com/questions/14489013/simulate-python-keypresses-for-controlling-a-game
+#
 
 SendInput = ctypes.windll.user32.SendInput
 
@@ -87,7 +90,9 @@ def ReleaseKey(hexKeyCode):
     x = Input( ctypes.c_ulong(1), ii_ )
     ctypes.windll.user32.SendInput(1, ctypes.pointer(x), ctypes.sizeof(x))
 
+#
 # END BLOCK
+#
 
 PAYLOAD_SIZE = 4
 
@@ -97,31 +102,32 @@ VK_LEFT = 0xCB
 VK_UP = 0xC8
 VK_RIGHT = 0xCD
 VK_DOWN = 0xD0
-VK_1 = 0x31
-VK_2 = 0x32
-VK_5 = 0x35
-VK_6 = 0x36
-VK_A = 0x41
-VK_D = 0x44
-VK_F = 0x46
-VK_G = 0x47
-VK_H = 0x48
-VK_J = 0x4A
-VK_L = 0x4C
-VK_M = 0x4D
-VK_S = 0x53
-VK_T = 0x54
-VK_U = 0x55
-VK_W = 0x57
-VK_Y = 0x59
-VK_SEMICOLON = 0xBA
-VK_COMMA = 0XBC
-VK_FULLSTOP = 0XBE
-VK_SLASH = 0xBF
-VK_QUOTE = 0xDE
+VK_1 = 0x02
+VK_2 = 0x03
+VK_5 = 0x06
+VK_6 = 0x07
+VK_A = 0x1E
+VK_D = 0x20
+VK_F = 0x21
+VK_G = 0x22
+VK_H = 0x23
+VK_J = 0x24
+VK_L = 0x26
+VK_M = 0x32
+VK_S = 0x1F
+VK_T = 0x14
+VK_U = 0x16
+VK_W = 0x11
+VK_Y = 0x15
+VK_SEMICOLON = 0x27
+VK_COMMA = 0x33
+VK_FULLSTOP = 0x34
+VK_SLASH = 0x35
+VK_QUOTE = 0x28
 
 ss = serial.Serial('COM3', 9600)
 time.sleep(1) # wait 1 second to ensure connection
+ss.read(1)
 
 cached_btns = bytearray([0,0,0,0])
 btns = bytearray([0,0,0,0])
@@ -129,11 +135,9 @@ btns = bytearray([0,0,0,0])
 def update_button_state( byte_num, mask, vkey ):
 	if cached_btns[byte_num] & mask > btns[byte_num] & mask:
 		# button released, send KEYUP event
-		#win32api.keybd_event(vkey, 0, win32con.KEYEVENTF_KEYUP, 0)
 		PressKey(vkey)
 	elif btns[byte_num] & mask > cached_btns[byte_num] & mask:
 		# button pressed, send KEYDOWN event
-		#win32api.keybd_event(vkey, 0, 0, 0)
 		ReleaseKey(vkey)
 
 while True:
@@ -148,40 +152,36 @@ while True:
 		print()
 
 		# byte0
-		update_button_state(1, 0b10000000, VK_UP)
-		update_button_state(1, 0b01000000, VK_DOWN)
-		update_button_state(1, 0b00100000, VK_LEFT)
-		update_button_state(1, 0b00010000, VK_RIGHT)
-		update_button_state(1, 0b00001000, VK_W)
-		update_button_state(1, 0b00000100, VK_S)
-		update_button_state(1, 0b00000010, VK_A)
-		update_button_state(1, 0b00000001, VK_D)
+		update_button_state(0, 0b10000000, VK_UP)
+		update_button_state(0, 0b01000000, VK_DOWN)
+		update_button_state(0, 0b00100000, VK_LEFT)
+		update_button_state(0, 0b00010000, VK_RIGHT)
+		update_button_state(0, 0b00001000, VK_W)
+		update_button_state(0, 0b00000100, VK_S)
+		update_button_state(0, 0b00000010, VK_A)
+		update_button_state(0, 0b00000001, VK_D)
 		# byte1
-		update_button_state(2, 0b10000000, VK_5)
-		update_button_state(2, 0b01000000, VK_1)
-		update_button_state(2, 0b00100000, VK_L)
-		update_button_state(2, 0b00010000, VK_SEMICOLON)
-		update_button_state(2, 0b00001000, VK_QUOTE)
-		update_button_state(2, 0b00000100, VK_COMMA)
-		update_button_state(2, 0b00000010, VK_SLASH)
-		update_button_state(2, 0b00000001, VK_FULLSTOP)
-		# byte2mm62tttt
-		update_button_state(3, 0b10000000, VK_M)
-		update_button_state(3, 0b01000000, VK_6)
-		update_button_state(3, 0b00100000, VK_2)
-		update_button_state(3, 0b00010000, VK_T)
-		update_button_state(3, 0b00001000, VK_Y)
-		update_button_state(3, 0b00000100, VK_U)
-		update_button_state(3, 0b00000010, VK_G)
-		update_button_state(3, 0b00000001, VK_H)
+		update_button_state(1, 0b10000000, VK_5)
+		update_button_state(1, 0b01000000, VK_1)
+		update_button_state(1, 0b00100000, VK_L)
+		update_button_state(1, 0b00010000, VK_SEMICOLON)
+		update_button_state(1, 0b00001000, VK_QUOTE)
+		update_button_state(1, 0b00000100, VK_COMMA)
+		update_button_state(1, 0b00000010, VK_SLASH)
+		update_button_state(1, 0b00000001, VK_FULLSTOP)
+		# byte2
+		update_button_state(2, 0b10000000, VK_M)
+		update_button_state(2, 0b01000000, VK_6)
+		update_button_state(2, 0b00100000, VK_2)
+		update_button_state(2, 0b00010000, VK_T)
+		update_button_state(2, 0b00001000, VK_Y)
+		update_button_state(2, 0b00000100, VK_U)
+		update_button_state(2, 0b00000010, VK_G)
+		update_button_state(2, 0b00000001, VK_H)
 		# byte3
-		update_button_state(0, 0b10000000, VK_J)
-		update_button_state(0, 0b01000000, VK_F)
+		update_button_state(3, 0b10000000, VK_J)
+		update_button_state(3, 0b01000000, VK_F)
 
 	except serial.serialutil.SerialException:
 		release_keys()
 		ss.close()
-
-
-
-
