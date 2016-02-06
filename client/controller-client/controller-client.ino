@@ -84,32 +84,32 @@ void setup() {
     ; // wait for serial port to connect. Needed for native USB port only
   }
 
-  pinMode(PIN_P1_UP, INPUT);
-  pinMode(PIN_P1_DOWN, INPUT);
-  pinMode(PIN_P1_LEFT, INPUT);
-  pinMode(PIN_P1_RIGHT, INPUT);
-  pinMode(PIN_P2_UP, INPUT);
-  pinMode(PIN_P2_DOWN, INPUT);
-  pinMode(PIN_P2_LEFT, INPUT);
-  pinMode(PIN_P2_RIGHT, INPUT);
-  pinMode(PIN_P1_COIN, INPUT);
-  pinMode(PIN_P1_START, INPUT);
-  pinMode(PIN_P1_B1, INPUT);
-  pinMode(PIN_P1_B2, INPUT);
-  pinMode(PIN_P1_B3, INPUT);
-  pinMode(PIN_P1_B4, INPUT);
-  pinMode(PIN_P1_B5, INPUT);
-  pinMode(PIN_P1_B6, INPUT);
-  pinMode(PIN_P1_B7, INPUT);
-  pinMode(PIN_P2_COIN, INPUT);
-  pinMode(PIN_P2_START, INPUT);
-  pinMode(PIN_P2_B1, INPUT);
-  pinMode(PIN_P2_B2, INPUT);
-  pinMode(PIN_P2_B3, INPUT);
-  pinMode(PIN_P2_B4, INPUT);
-  pinMode(PIN_P2_B5, INPUT);
-  pinMode(PIN_P2_B6, INPUT);
-  pinMode(PIN_P2_B7, INPUT);
+  pinMode(PIN_P1_UP, INPUT_PULLUP);
+  pinMode(PIN_P1_DOWN, INPUT_PULLUP);
+  pinMode(PIN_P1_LEFT, INPUT_PULLUP);
+  pinMode(PIN_P1_RIGHT, INPUT_PULLUP);
+  pinMode(PIN_P2_UP, INPUT_PULLUP);
+  pinMode(PIN_P2_DOWN, INPUT_PULLUP);
+  pinMode(PIN_P2_LEFT, INPUT_PULLUP);
+  pinMode(PIN_P2_RIGHT, INPUT_PULLUP);
+  pinMode(PIN_P1_COIN, INPUT_PULLUP);
+  pinMode(PIN_P1_START, INPUT_PULLUP);
+  pinMode(PIN_P1_B1, INPUT_PULLUP);
+  pinMode(PIN_P1_B2, INPUT_PULLUP);
+  pinMode(PIN_P1_B3, INPUT_PULLUP);
+  pinMode(PIN_P1_B4, INPUT_PULLUP);
+  pinMode(PIN_P1_B5, INPUT_PULLUP);
+  pinMode(PIN_P1_B6, INPUT_PULLUP);
+  pinMode(PIN_P1_B7, INPUT_PULLUP);
+  pinMode(PIN_P2_COIN, INPUT_PULLUP);
+  pinMode(PIN_P2_START, INPUT_PULLUP);
+  pinMode(PIN_P2_B1, INPUT_PULLUP);
+  pinMode(PIN_P2_B2, INPUT_PULLUP);
+  pinMode(PIN_P2_B3, INPUT_PULLUP);
+  pinMode(PIN_P2_B4, INPUT_PULLUP);
+  pinMode(PIN_P2_B5, INPUT_PULLUP);
+  pinMode(PIN_P2_B6, INPUT_PULLUP);
+  pinMode(PIN_P2_B7, INPUT_PULLUP);
 }
 
 
