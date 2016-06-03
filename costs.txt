@@ -1,0 +1,19 @@
+
+PAID:
+-----
+Arduino         $8.82
+Joysticks       $16.05
+Buttons         $30.55
+
+ESTIMATES:
+----------
+DVI-HDMI adapter      $10
+Monitor               $5-10
+Speakers              $
+Speaker grilles       $6-8
+Timber                $
+Raspberry Pi 3        $70
+External HDD          $
+  - or just buy an enclosure and salvage drive from old laptop
+Handle                $
+Latch, hinges, screws $

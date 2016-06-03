@@ -1,0 +1,14 @@
+Size of Philips 190S (as example):
+Width : 424 mm
+Height : 361 mm
+Depth : 65.1 mm
+
+- need room on top bezel for power cable to come out and connect to bottom of box
+
+Control panel should be 580mm across
+
+
+
+Shrink dimensions down to 50*50*50cm
+
+Need to decide whether to have the monitor face straight ahead when the top is open, or angle upwards (e.g. sit flat inside the lid)
