@@ -6,17 +6,17 @@ Joysticks                           $16.05
 Buttons                             $30.55
   Extra coin button                 $1.92
 MDF for CP/bezel                    $16
-External HDD                        $FREE (from old laptop)
-  HDD enclosure	                    $23
 Raspberry Pi 3                      $60
 Monitor                             $10
 DVI-HDMI adapter                    $9
 Speakers                            $FREE
 Power adapter w/ USB                $17.25
-8GB microSD                         $6.90
+32GB microSD                        $9.90
 HDMI cable (0.5M)                   $5.70
 Timber for box                      $36.20
-Extension cable                     $7.00
 
-ESTIMATES:
-----------
+
+todo:
+-----
+Extension cable                     $???
+Power door hinge
