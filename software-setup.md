@@ -10,6 +10,18 @@ Software setup
 - dd Retroipe + Attract Mode image to 16GB microSD
     - dd bs=4M if=<the img file> of=/dev/sdd
 
+
+
+First boot:
+- Launch raspi-config to expand FS and set locale
+- Started Emulation Station, launched Retropie option to configure wifi
+- Update Retropie from Retropie > Retropie Setup
+  - "Update all installed packages" -> auto-updates install script first
+  - Also updating system packages as part of update
+    - Took about 2.5 hours
+
+- Using https://www.youtube.com/watch?v=-ssbyofbm4Q to help configure
+
 - Think it will be easiest to have dedicated romsets for each of the three emulators
   - Should have plenty of disk space at least!
 
