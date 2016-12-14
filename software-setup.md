@@ -9,3 +9,10 @@ Software setup
   - Copy over all ROMs and patch them
 - dd Retroipe + Attract Mode image to 16GB microSD
     - dd bs=4M if=<the img file> of=/dev/sdd
+
+- Think it will be easiest to have dedicated romsets for each of the three emulators
+  - Should have plenty of disk space at least!
+
+TODO
+====
+- Should download and use this theme: http://www.onyxarcade.com/nevato.html
