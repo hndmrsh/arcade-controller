@@ -20,3 +20,4 @@ First boot:
     - Took about 2.5 hours
 
 - Using https://www.youtube.com/watch?v=-ssbyofbm4Q to help configure
+- Set roms path for MAME (Adv) to /media/usb/roms_to_0.173
