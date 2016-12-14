@@ -11,6 +11,7 @@ Software setup
     - dd bs=4M if=<the img file> of=/dev/sdd
 
 
+
 First boot:
 - Launch raspi-config to expand FS and set locale
 - Started Emulation Station, launched Retropie option to configure wifi
@@ -21,3 +22,9 @@ First boot:
 
 - Using https://www.youtube.com/watch?v=-ssbyofbm4Q to help configure
 - Set roms path for MAME (Adv) to /media/usb/roms_to_0.173
+- Think it will be easiest to have dedicated romsets for each of the three emulators
+  - Should have plenty of disk space at least!
+
+TODO
+====
+- Should download and use this theme: http://www.onyxarcade.com/nevato.html
