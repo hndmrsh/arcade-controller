@@ -25,6 +25,12 @@ First boot:
 - Think it will be easiest to have dedicated romsets for each of the three emulators
   - Should have plenty of disk space at least!
 
+- symlink'd ~/roms/mame-libretro/roms to the mame2003 romset on the external HDD
+- Generated romlist from dir
+- Scrape artwork
+- Some games work (not Neo Geo games?)
+  - need to scan romset using clrmamepro to work out what's missing
+
 TODO
 ====
 - Should download and use this theme: http://www.onyxarcade.com/nevato.html

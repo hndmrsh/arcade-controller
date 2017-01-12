@@ -9,3 +9,11 @@ Need to decide whether to have the monitor face straight ahead when the top is o
 
 Sides of box should be joined using finger joints
 Top and bottom of box should be attached using housing/dado joints, e.g.: https://www.youtube.com/watch?v=WOBX8_zQitE
+
+
+Extra buttons:
+- MAME menu
+- Toggle service mode and then reset (i.e. "F2, F3" macro)
+- Pause game
+- Toggle controller player number (may not be necessary if 2p versions of games are sufficient - e.g. The Simpsons, NBA Jam)
+- Exit game
