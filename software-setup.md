@@ -24,6 +24,10 @@ First boot:
 - Set roms path for MAME (Adv) to /media/usb/roms_to_0.173
 - Think it will be easiest to have dedicated romsets for each of the three emulators
   - Should have plenty of disk space at least!
+- Start by creating a mame2003/MAME 0.78 directory on the HDD
+- Followed clrmamepro tutorial on https://github.com/retropie/retropie-setup/wiki/managing-roms to create a 0.78 romset
+  - This is going to take hours...
+
 
 TODO
 ====
