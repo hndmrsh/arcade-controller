@@ -34,6 +34,11 @@ First boot:
 - Scrape artwork
 - Some games work (not Neo Geo games?)
   - need to scan romset using clrmamepro to work out what's missing
+  - a lot of missing/broken files; going to try reconstructing a 0.78 set from the 0.151 set rather than the multiple-patched 0.175 set
+
+- Switch to robospin theme
+    - Probably going to have to create a custom non-ugly theme based on robospin later
+
 
 TODO
 ====

@@ -15,5 +15,10 @@ Extra buttons:
 - MAME menu
 - Toggle service mode and then reset (i.e. "F2, F3" macro)
 - Pause game
-- Toggle controller player number (may not be necessary if 2p versions of games are sufficient - e.g. The Simpsons, NBA Jam)
 - Exit game
+
+
+Not doing this: toggle controller player number (may not be necessary if 2p versions of games are sufficient - e.g. The Simpsons, NBA Jam)
+
+
+Software should keep high scores

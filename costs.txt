@@ -1,7 +1,7 @@
 
 PAID:
 -----
-Arduino                             $8.82
+Arduino                             $8.82 (may not use now)
 Joysticks                           $16.05
 Buttons                             $30.55
   Extra coin button                 $1.92
@@ -20,3 +20,7 @@ Extension cable                     $7.00
 Hinges                              $3.40
 Stain                               $10.07
 Monitor screws for mounting         $5.88
+I2C GPIO expander chip              $2.24 (may not use now?)
+3.5mm extension cable               $0.85
+Black bezel paint                   $4.20
+Bezel MDF                           $8
