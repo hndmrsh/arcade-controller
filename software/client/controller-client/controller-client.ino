@@ -1,7 +1,7 @@
 /*
  * Payload description:
  *   4 bytes per packet; described from MSB to LSB
- * 
+ *
  * Byte0:
  *   P1_UP
  *   P1_DOWN
@@ -35,10 +35,10 @@
  * Byte3:
  *   P2_B6
  *   P2_B7
- *   NONE
- *   NONE
- *   NONE
- *   NONE
+ *   SYS_1
+ *   SYS_2
+ *   SYS_3
+ *   SYS_4
  *   NONE
  *   NONE
  */
@@ -74,6 +74,10 @@ const int PIN_P2_B5 = 43;
 
 const int PIN_P2_B6 = 45;
 const int PIN_P2_B7 = 47;
+const int PIN_SYS_1 = 48;
+const int PIN_SYS_2 = 49;
+const int PIN_SYS_3 = 50;
+const int PIN_SYS_4 = 51;
 
 byte btns[PAYLOAD_SIZE];
 
@@ -110,15 +114,19 @@ void setup() {
   pinMode(PIN_P2_B5, INPUT_PULLUP);
   pinMode(PIN_P2_B6, INPUT_PULLUP);
   pinMode(PIN_P2_B7, INPUT_PULLUP);
+  pinMode(PIN_SYS_1, INPUT_PULLUP);
+  pinMode(PIN_SYS_2, INPUT_PULLUP);
+  pinMode(PIN_SYS_3, INPUT_PULLUP);
+  pinMode(PIN_SYS_4, INPUT_PULLUP);
 }
 
 
 void loop() {
-  if(Serial) {    
+  if(Serial) {
     for(int b = 0; b < PAYLOAD_SIZE; b++) {
   	  btns[b] = 0;
   	}
-      
+
     btns[0] |= (buttonState(PIN_P1_UP) << 7);
     btns[0] |= (buttonState(PIN_P1_DOWN) << 6);
     btns[0] |= (buttonState(PIN_P1_LEFT) << 5);
@@ -145,6 +153,10 @@ void loop() {
     btns[2] |= (buttonState(PIN_P2_B5));
     btns[3] |= (buttonState(PIN_P2_B6) << 7);
     btns[3] |= (buttonState(PIN_P2_B7) << 6);
+    btns[3] |= (buttonState(PIN_SYS_1) << 5);
+    btns[3] |= (buttonState(PIN_SYS_2) << 4);
+    btns[3] |= (buttonState(PIN_SYS_3) << 3);
+    btns[3] |= (buttonState(PIN_SYS_4) << 2);
 
     Serial.write(btns, PAYLOAD_SIZE);
   }
