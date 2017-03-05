@@ -85,7 +85,7 @@ with uinput.UInput() as ui:
     		for b in range(0,PAYLOAD_SIZE):
     			btns[b] = ord(ss.read(1))
     			print('{0:08b}'.format(btns[b]), end=' ') # debugging: print binary representation of bytes
-    		print()
+    		    print()
 
             #byte0
             ui.write(e.EV_KEY, e.KEY_UP,         (btns[0] & 0b10000000) >> 7)
