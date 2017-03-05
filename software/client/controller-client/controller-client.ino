@@ -49,35 +49,38 @@ const int PIN_P1_UP = 22;
 const int PIN_P1_DOWN = 24;
 const int PIN_P1_LEFT = 26;
 const int PIN_P1_RIGHT = 28;
+const int PIN_P1_B1 = 30;
+const int PIN_P1_B2 = 32;
+const int PIN_P1_B3 = 34;
+const int PIN_P1_B4 = 36;
+const int PIN_P1_B5 = 38;
+const int PIN_P1_B6 = 40;
+const int PIN_P1_B7 = 42;
+
 const int PIN_P2_UP = 23;
 const int PIN_P2_DOWN = 25;
 const int PIN_P2_LEFT = 27;
 const int PIN_P2_RIGHT = 29;
+const int PIN_P2_B1 = 31;
+const int PIN_P2_B2 = 33;
+const int PIN_P2_B3 = 35;
+const int PIN_P2_B4 = 37;
+const int PIN_P2_B5 = 39;
+const int PIN_P2_B6 = 41;
+const int PIN_P2_B7 = 43;
 
-const int PIN_P1_COIN = 30;
-const int PIN_P1_START = 32;
-const int PIN_P1_B1 = 34;
-const int PIN_P1_B2 = 36;
-const int PIN_P1_B3 = 38;
-const int PIN_P1_B4 = 40;
-const int PIN_P1_B5 = 42;
-const int PIN_P1_B6 = 44;
 
-const int PIN_P1_B7 = 46;
-const int PIN_P2_COIN = 31;
-const int PIN_P2_START = 33;
-const int PIN_P2_B1 = 35;
-const int PIN_P2_B2 = 37;
-const int PIN_P2_B3 = 39;
-const int PIN_P2_B4 = 41;
-const int PIN_P2_B5 = 43;
+const int PIN_P1_COIN = 44;
+const int PIN_P1_START = 46;
 
-const int PIN_P2_B6 = 45;
-const int PIN_P2_B7 = 47;
+const int PIN_P2_COIN = 45;
+const int PIN_P2_START = 47;
+
 const int PIN_SYS_1 = 48;
-const int PIN_SYS_2 = 49;
-const int PIN_SYS_3 = 50;
+const int PIN_SYS_2 = 50;
+const int PIN_SYS_3 = 49;
 const int PIN_SYS_4 = 51;
+
 
 byte btns[PAYLOAD_SIZE];
 
