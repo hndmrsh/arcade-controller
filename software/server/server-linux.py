@@ -79,13 +79,13 @@ def release_keys(ui):
 
 with uinput.UInput() as ui:
     while True:
-    	try:
-    		# load button states
-    		btns = bytearray([0,0,0,0])
-    		for b in range(0,PAYLOAD_SIZE):
-    			btns[b] = ord(ss.read(1))
-    			print('{0:08b}'.format(btns[b]), end=' ') # debugging: print binary representation of bytes
-    		    print()
+        try:
+            # load button states
+            btns = bytearray([0,0,0,0])
+            for b in range(0,PAYLOAD_SIZE):
+                btns[b] = ord(ss.read(1))
+                print('{0:08b}'.format(btns[b]), end=' ') # debugging: print binary representation of bytes
+                print()
 
             #byte0
             ui.write(e.EV_KEY, e.KEY_UP,         (btns[0] & 0b10000000) >> 7)
@@ -122,6 +122,6 @@ with uinput.UInput() as ui:
             #TODO system macros
 
             ui.syn()
-    	except serial.serialutil.SerialException:
-    		release_keys(ui)
-    		ss.close()
+        except serial.serialutil.SerialException:
+            release_keys(ui)
+            ss.close()
